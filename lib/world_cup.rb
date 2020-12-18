@@ -14,7 +14,7 @@ class WorldCup
   def active_players_by_position(position)
   active_players_by_position_array = []
     @country.each do |country|
-      if country.players_by_position(position) == position
+      if country.players.players_by_position(position) == position
         active_players_by_position << players_by_position
       end
     end
